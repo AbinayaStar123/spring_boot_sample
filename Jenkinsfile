@@ -16,7 +16,7 @@ stages  {
 	stage('Deploy') {
 	steps {
 	          withCredentials([[$class	: 'UsernamePasswordMultiBinding',
-	          					credentailsId	: 'PCF_LOGIN'.
+	          					credentailsId	: 'PCF_LOGIN',
 	          					usernameVariable : 'USERNAME',
 	          					passwordVariable : 'PASSWORD']]) {
 	          					
