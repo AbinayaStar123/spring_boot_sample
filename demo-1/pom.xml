@@ -66,6 +66,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>spring-jenkins-pcf</finalName>
 	</build>
 
 </project>
