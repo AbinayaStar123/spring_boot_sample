@@ -1,13 +1,15 @@
 pipeline {
 agent any
+	tools{
+		maven M2_HOME
+	}
 stages  {
 	stage('Build') {
 	steps {
-			withMaven(maven : 'maven_3_6_1') {
-			sh 'mvn clean package'
+						sh 'mvn clean package'
 			
 			}
 			}
 			}
-		}
+		
     }
